@@ -1,7 +1,59 @@
-# Human Activity prediction on wearable sensors
+# Human Activity Recognition with Wearable Sensors
 
-#### The impact of initiatives aiming at boosting physical activity can also be investigated using activity classification systems. Accurate data on daily activity patterns has the potential to improve neurological and respiratory illnesses therapy and differential diagnosis. Sensors worn on the body are ideal for gathering data on activity patterns over long periods of time. Unlike other technologies, such as laboratory-based systems or video analysis, they can be employed in free living situations with minimal user annoyance. With recent advancements in sensor miniaturization, data on various components of human mobility, such as segmental acceleration, rotational velocity, and foot pressure, may now be collected. Sensor data from the body can be utilized to estimate functional factors like gait speed and energy expenditure, as well as to classify activities and create a continuous activity record. The automatic detection of activities using data from body-worn sensors is a difficult task. Apart from the obvious practical constraints on the number, position, and nature of sensors that people will tolerate, there are a number of concerns that have a direct impact on the algorithm's success.
-## Dataset
-#### The dataset consists of information of acceleration and gyroscope sensors which help in predicting various states of human activities.
-## Conclusion
-#### To conclude, the automatic detection of activities using data from body-worn sensors is a difficult task. Attributes like accelerometer and gyroscope sensors have been utilized in order to predict the activities performed by the subject. Data exploratory analysis was done which helps us draw insights from the graphs about the activities performed. For the data processing part, five Machine Learning algorithms were trained and tested to give an efficient accuracy score for the activities. On observing the model accuracy graph we can infer that the Support Vector Machine algorithms has the most efficient mean error rate and accuracy score of 93.97% .
+This project focuses on classifying human activities using data from wearable sensors like accelerometers and gyroscopes.
+
+---
+
+## 📁 Dataset
+
+- **Source:** mHealth & HAR Smartphone datasets
+- **Sensors Used:** Accelerometer (alx, aly, alz, etc.), Gyroscope (glx, gly, glz, etc.)
+- **Target:** `Activity` label
+
+---
+
+## 🔍 Data Exploration
+
+- Checked data types, missing values, and class balance.
+- Visualized activity distribution using bar charts.
+
+---
+
+## 🔧 Preprocessing
+
+- Applied **median filter** to smooth raw sensor signals.
+- Segmented continuous activity sequences.
+- Downsampled each class to 2000 samples for balance.
+- Normalized data using Min-Max scaling.
+
+---
+
+## 🧪 Train/Test Split
+
+- Split the data into 70% training and 30% testing sets.
+
+---
+
+## 🤖 Models Tested
+
+| Model                    | Accuracy  |
+|-------------------------|-----------|
+| Support Vector Machine  | 93.97%    |
+| Gradient Boosting       | 93.40%    |
+| K-Nearest Neighbors     | 92.40%    |
+| Random Forest           | 80.31%    |
+| Logistic Regression     | 56.90%    |
+
+---
+
+## 📊 Visualization
+
+- Plotted raw and filtered signals to observe noise reduction.
+- Bar chart comparing model accuracies.
+
+---
+
+## ✅ Conclusion
+
+Support Vector Machine (SVM) achieved the highest accuracy at 93.97%. Wearable sensor data shows strong potential for robust human activity classification.
+
