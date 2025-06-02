@@ -2,37 +2,27 @@
 
 This project focuses on classifying human activities using data from wearable sensors like accelerometers and gyroscopes.
 
----
 
-## 📁 Dataset
+## Dataset
 
 - **Source:** mHealth & HAR Smartphone datasets
 - **Sensors Used:** Accelerometer (alx, aly, alz, etc.), Gyroscope (glx, gly, glz, etc.)
 - **Target:** `Activity` label
 
----
 
-## 🔍 Data Exploration
+## Data Exploration
 
 - Checked data types, missing values, and class balance.
 - Visualized activity distribution using bar charts.
 
----
 
-## 🔧 Preprocessing
+## Preprocessing
 
 - Applied **median filter** to smooth raw sensor signals.
 - Segmented continuous activity sequences.
 - Downsampled each class to 2000 samples for balance.
 - Normalized data using Min-Max scaling.
 
----
-
-## 🧪 Train/Test Split
-
-- Split the data into 70% training and 30% testing sets.
-
----
 
 ## 🤖 Models Tested
 
@@ -44,16 +34,14 @@ This project focuses on classifying human activities using data from wearable se
 | Random Forest           | 80.31%    |
 | Logistic Regression     | 56.90%    |
 
----
 
-## 📊 Visualization
+## Visualization
 
 - Plotted raw and filtered signals to observe noise reduction.
 - Bar chart comparing model accuracies.
 
----
 
-## ✅ Conclusion
+## Conclusion
 
 Support Vector Machine (SVM) achieved the highest accuracy at 93.97%. Wearable sensor data shows strong potential for robust human activity classification.
 
